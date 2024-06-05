@@ -1,0 +1,15 @@
+apiVersion: V1
+kind: Pod
+metadata:
+  name: fayazpod
+  namespace: default
+spec:
+  containers:
+  - name: busybox
+    image: busybox
+    command:
+      - sleep
+      - "3600"
+  - name: nginx
+    image: nginx
+        
